@@ -173,7 +173,7 @@ public void refresh() throws BeansException, IllegalStateException {
 
 # spring如何解决 存在aop对象时 的 循环依赖
 
-![image-20211003101230978](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003101230978.png)
+![image-20211003101230978](.\img\image-20211003101230978.png)
 
 ![Snipaste_2021-10-02_22-31-32](.\img\Snipaste_2021-10-02_22-31-32.png)
 
@@ -185,93 +185,93 @@ org.springframework.beans.factory.support.DefaultSingletonBeanRegistry#addSingle
 
 依赖的itbean
 
-![image-20211002224103527](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002224103527.png)
+![image-20211002224103527](.\img\image-20211002224103527.png)
 
 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry#addSingletonFactory
 
 放入单例工厂的是lagouBean的工厂对象
 
-![image-20211002224336109](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002224336109.png)
+![image-20211002224336109](.\img\image-20211002224336109.png)
 
 2. lagoubean属性填充
 
 org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#populateBean
 
-![image-20211002225119029](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002225119029.png)
+![image-20211002225119029](.\img\image-20211002225119029.png)
 
 
 
-![image-20211002225206859](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002225206859.png)
+![image-20211002225206859](.\img\image-20211002225206859.png)
 
 org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#applyPropertyValues
 
-![image-20211002225336148](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002225336148.png)
+![image-20211002225336148](.\img\image-20211002225336148.png)
 
 org.springframework.beans.factory.support.BeanDefinitionValueResolver#resolveValueIfNecessary
 
-![image-20211002225433500](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002225433500.png)
+![image-20211002225433500](.\img\image-20211002225433500.png)
 
 org.springframework.beans.factory.support.BeanDefinitionValueResolver#resolveReference
 
-![image-20211002225458877](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002225458877.png)
+![image-20211002225458877](.\img\image-20211002225458877.png)
 
 org.springframework.beans.factory.support.AbstractBeanFactory#getBean(java.lang.String)
 
 org.springframework.beans.factory.support.AbstractBeanFactory#doGetBean
 
-![image-20211002230100859](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002230100859.png)
+![image-20211002230100859](.\img\image-20211002230100859.png)
 
 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry#getSingleton
 
-![image-20211002230046067](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002230046067.png)
+![image-20211002230046067](.\img\image-20211002230046067.png)
 
-![image-20211002230121653](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002230121653.png)
+![image-20211002230121653](.\img\image-20211002230121653.png)
 
 org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#createBean
 
-![image-20211002230157011](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002230157011.png)
+![image-20211002230157011](.\img\image-20211002230157011.png)
 
 org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#doCreateBean
 
-![image-20211002230236987](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002230236987.png)
+![image-20211002230236987](.\img\image-20211002230236987.png)
 
 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry#addSingletonFactory
 
-![image-20211002230311716](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002230311716.png)
+![image-20211002230311716](.\img\image-20211002230311716.png)
 
 org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#doCreateBean
 
-![image-20211002230335907](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002230335907.png)
+![image-20211002230335907](.\img\image-20211002230335907.png)
 
 org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#populateBean
 
-![image-20211002230410930](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002230410930.png)
+![image-20211002230410930](.\img\image-20211002230410930.png)
 
 org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#applyPropertyValues
 
-![image-20211002230437386](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002230437386.png)
+![image-20211002230437386](.\img\image-20211002230437386.png)
 
 org.springframework.beans.factory.support.BeanDefinitionValueResolver#resolveValueIfNecessary
 
-![image-20211002230458538](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002230458538.png)
+![image-20211002230458538](.\img\image-20211002230458538.png)
 
 org.springframework.beans.factory.support.BeanDefinitionValueResolver#resolveReference
 
-![image-20211002230524899](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002230524899.png)
+![image-20211002230524899](.\img\image-20211002230524899.png)
 
 org.springframework.beans.factory.support.AbstractBeanFactory#getBean(java.lang.String)
 
 org.springframework.beans.factory.support.AbstractBeanFactory#doGetBean
 
-![image-20211002230644170](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002230644170.png)
+![image-20211002230644170](.\img\image-20211002230644170.png)
 
 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry#getSingleton(java.lang.String)
 
 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry#getSingleton(java.lang.String, boolean)
 
-![image-20211002230837634](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002230837634.png)
+![image-20211002230837634](.\img\image-20211002230837634.png)
 
-![image-20211002230954087](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002230954087.png)
+![image-20211002230954087](.\img\image-20211002230954087.png)
 
 org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#getEarlyBeanReference
 
@@ -279,125 +279,125 @@ org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#get
 
 正常情况下，代理对象的产生 在属性设置后的bean初始化过程中的后置处理阶段。org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#initializeBean方法中的 applyBeanPostProcessorsAfterInitialization方法。
 
-![image-20211002231226284](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002231226284.png)
+![image-20211002231226284](.\img\image-20211002231226284.png)
 
 org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator#getEarlyBeanReference
 
-![image-20211002231329850](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002231329850.png)
+![image-20211002231329850](.\img\image-20211002231329850.png)
 
-![image-20211002231715937](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002231715937.png)
+![image-20211002231715937](.\img\image-20211002231715937.png)
 
-![image-20211002231742529](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002231742529.png)
+![image-20211002231742529](.\img\image-20211002231742529.png)
 
 org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator#wrapIfNecessary
 
-![image-20211002232945513](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002232945513.png)
+![image-20211002232945513](.\img\image-20211002232945513.png)
 
 org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator#createProxy
 
-![image-20211002233119265](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002233119265.png)
+![image-20211002233119265](.\img\image-20211002233119265.png)
 
 org.springframework.aop.framework.ProxyFactory#getProxy(java.lang.ClassLoader)
 
 org.springframework.aop.framework.CglibAopProxy#getProxy(java.lang.ClassLoader)
 
-![image-20211002233328417](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002233328417.png)
+![image-20211002233328417](.\img\image-20211002233328417.png)
 
 org.springframework.aop.framework.ObjenesisCglibAopProxy#createProxyClassAndInstance
 
-![image-20211002233439768](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002233439768.png)
+![image-20211002233439768](.\img\image-20211002233439768.png)
 
 org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#getEarlyBeanReference
 
 这里返回的已经是一个代理对象了
 
-![image-20211002233638075](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002233638075.png)
+![image-20211002233638075](.\img\image-20211002233638075.png)
 
 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry#getSingleton(java.lang.String, boolean)
 
-![image-20211002233830098](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002233830098.png)
+![image-20211002233830098](.\img\image-20211002233830098.png)
 
 org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#applyPropertyValues
 
-![image-20211002234008961](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002234008961.png)
+![image-20211002234008961](.\img\image-20211002234008961.png)
 
 org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#doCreateBean
 
 itbean属性设置完毕，开始调用构造函数初始化，已经后置处理器处理
 
-![image-20211002234104728](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211002234104728.png)
+![image-20211002234104728](.\img\image-20211002234104728.png)
 
 
 
-![image-20211003001118469](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003001118469.png)
+![image-20211003001118469](.\img\image-20211003001118469.png)
 
-![image-20211003001424045](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003001424045.png)
+![image-20211003001424045](.\img\image-20211003001424045.png)
 
 org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#createBean(java.lang.String, org.springframework.beans.factory.support.RootBeanDefinition, java.lang.Object[])
 
-![image-20211003001448006](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003001448006.png)
+![image-20211003001448006](.\img\image-20211003001448006.png)
 
 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry#getSingleton
 
-![image-20211003001552237](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003001552237.png)
+![image-20211003001552237](.\img\image-20211003001552237.png)
 
 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry#addSingleton
 
 直接将itbean从3级缓存挪到1级缓存了
 
-![image-20211003001634908](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003001634908.png)
+![image-20211003001634908](.\img\image-20211003001634908.png)
 
 org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#applyPropertyValues
 
 回到lagoubean处理属性这边
 
-![image-20211003001756124](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003001756124.png)
+![image-20211003001756124](.\img\image-20211003001756124.png)
 
 org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#doCreateBean
 
-![image-20211003001901428](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003001901428.png)
+![image-20211003001901428](.\img\image-20211003001901428.png)
 
 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry#getSingleton(java.lang.String, boolean)
 
-![image-20211003002025686](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003002025686.png)
+![image-20211003002025686](.\img\image-20211003002025686.png)
 
 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry#getSingleton(java.lang.String, org.springframework.beans.factory.ObjectFactory<?>)
 
 在这里添加将lagoubean从2级缓存 挪到1级缓存
 
-![image-20211003002140781](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003002140781.png)
+![image-20211003002140781](.\img\image-20211003002140781.png)
 
 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry#addSingleton
 
-![image-20211003002342141](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003002342141.png)
+![image-20211003002342141](.\img\image-20211003002342141.png)
 
 
 
 # aop 正常创建流程
 
-![image-20211003101447461](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003101447461.png)
+![image-20211003101447461](.\img\image-20211003101447461.png)
 
 如果该对象不设置循环依赖，aop对象正常创建 一定是在 设置属性（填充依赖的对象）后，**对象初始化过程中的后置处理阶段。**
 
 org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#initializeBean(java.lang.String, java.lang.Object, org.springframework.beans.factory.support.RootBeanDefinition)
 
-![image-20211003101513433](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003101513433.png)
+![image-20211003101513433](.\img\image-20211003101513433.png)
 
 org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#applyBeanPostProcessorsAfterInitialization
 
-![image-20211003101534608](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003101534608.png)
+![image-20211003101534608](.\img\image-20211003101534608.png)
 
 org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator#postProcessAfterInitialization
 
-![image-20211003101733438](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003101733438.png)
+![image-20211003101733438](.\img\image-20211003101733438.png)
 
 org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator#wrapIfNecessary
 
-![image-20211003101803177](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003101803177.png)
+![image-20211003101803177](.\img\image-20211003101803177.png)
 
 org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator#createProxy
 
-![image-20211003101831509](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003101831509.png)
+![image-20211003101831509](.\img\image-20211003101831509.png)
 
 
 
@@ -423,15 +423,15 @@ MapperFactoryBean 有个属性为 sqlSessionFactory,因此创建时，会填充s
 
 获取sqlSessionFactory时，会根据名称先 拿到sqlSessionFactoryBean，调用getobject得到sqlSessionFactory，
 
-![image-20211003141642603](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003141642603.png)
+![image-20211003141642603](.\img\image-20211003141642603.png)
 
-![image-20211003141411403](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003141411403.png)
+![image-20211003141411403](.\img\image-20211003141411403.png)
 
 
 
 org.mybatis.spring.SqlSessionFactoryBean#getObject
 
-![image-20211003142031763](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003142031763.png)
+![image-20211003142031763](.\img\image-20211003142031763.png)
 
 如果一开始就没有SqlSessionFactory，调用
 
@@ -443,15 +443,15 @@ org.apache.ibatis.session.SqlSessionFactoryBuilder#build(org.apache.ibatis.sessi
 
 最终返回SqlSessionFactory
 
-![image-20211003142528286](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003142528286.png)
+![image-20211003142528286](.\img\image-20211003142528286.png)
 
 拿到sqlsessionFactory后，开始设置MapperFactoryBean的属性sqlsessionFactory，
 
-![image-20211003143806021](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003143806021.png)
+![image-20211003143806021](.\img\image-20211003143806021.png)
 
-![image-20211003143815505](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003143815505.png)
+![image-20211003143815505](.\img\image-20211003143815505.png)
 
-![image-20211003143901914](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003143901914.png)
+![image-20211003143901914](.\img\image-20211003143901914.png)
 
 其实本质上MapperFactoryBean 继承sqlsessionFactory ，从而拥有  SqlSessionTemplate，所以直接从类继承上看不出MapperFactoryBean 为啥拥有sqlSessionFactory属性，
 
@@ -461,13 +461,13 @@ org.mybatis.spring.mapper.ClassPathMapperScanner#processBeanDefinitions
 
 - 未处理前bd定义
 
-![image-20211003155706295](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003155706295.png)
+![image-20211003155706295](.\img\image-20211003155706295.png)
 
 - 处理后，bd定义
 
 每一个mapper接口都会被扫描成一个BeanDefinition，这个BD开始会被强制设置成MapperFactoryBean类型，并且sqlSessioinFactory放进了bd的属性里
 
-![image-20211003155215519](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003155215519.png)
+![image-20211003155215519](.\img\image-20211003155215519.png)
 
 
 
@@ -477,29 +477,29 @@ accountMapper首先生成MapperFactoryBean工厂对象放到3级缓存，再处�
 
 org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#doCreateBean
 
-![image-20211003162655119](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003162655119.png)
+![image-20211003162655119](.\img\image-20211003162655119.png)
 
 org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#populateBean
 
-![image-20211003162643416](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003162643416.png)
+![image-20211003162643416](.\img\image-20211003162643416.png)
 
 org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#applyPropertyValues
 
-![image-20211003162627384](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003162627384.png)
+![image-20211003162627384](.\img\image-20211003162627384.png)
 
 org.springframework.beans.BeanWrapperImpl.BeanPropertyHandler#setValue
 
-![image-20211003162452288](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003162452288.png)
+![image-20211003162452288](.\img\image-20211003162452288.png)
 
 org.mybatis.spring.support.SqlSessionDaoSupport#setSqlSessionFactory
 
-![image-20211003162502656](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003162502656.png)
+![image-20211003162502656](.\img\image-20211003162502656.png)
 
 
 
 这样MapperFactoryBean的sqlSessionTemplate就有值了
 
-![image-20211003162759305](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003162759305.png)
+![image-20211003162759305](.\img\image-20211003162759305.png)
 
 
 
@@ -507,7 +507,7 @@ org.mybatis.spring.support.SqlSessionDaoSupport#setSqlSessionFactory
 
 这里我们先**根据依赖accoutMapper 的名称作为key**, 拿到beanFactory中的 MapperFactoryBean, 判断发现是工厂bean,接着去getObject方法获得最终bean,这时候就会生成代理对象。
 
-![image-20211003163636837](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211003163636837.png)
+![image-20211003163636837](.\img\image-20211003163636837.png)
 
 
 
